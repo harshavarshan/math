@@ -1,0 +1,14 @@
+<script>
+	var isPower_of_two = (function() {
+
+const power = 2;
+
+return function(n){
+return n && ((Math.pow(n,1/power))%1 === 0);
+};
+
+})();
+
+console.log(isPower_of_two(64)); //true
+console.log(isPower_of_two(94));
+</script>

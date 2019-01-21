@@ -1,0 +1,9 @@
+<script>
+	function ex8(x, y){
+if(!y) return y === 0 ? x : NaN;
+return ex8(y, x % y);
+}
+console.log(ex8(12, 8));
+console.log(ex8(15, 5));
+console.log(ex8(12, 13));
+</script>

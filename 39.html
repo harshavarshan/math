@@ -1,0 +1,12 @@
+<script>
+	var thousands_separators = (function() {
+
+return function(n){
+return Intl.NumberFormat().format(n);
+};
+
+})();
+
+console.log(thousands_separators(1000)); 
+console.log(thousands_separators(10000.23));
+</script>

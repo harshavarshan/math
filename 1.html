@@ -1,0 +1,11 @@
+<script>
+	function base_convert(number, base1, base2) {
+    if ((base1 < 2 || base1 > 36) || (base2 < 2 || base2 > 36)) {
+        return "base is off limits(2-36)";
+    }
+    number = parseInt(number, base1);
+    return Number(number.toString(base2));
+}
+
+console.log(base_convert('E164',16,8));
+</script>

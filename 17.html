@@ -1,0 +1,15 @@
+<script>
+	function ex17(nr){
+var res = 0;
+for( var i = 0; i < nr.length; i++){
+if(isNaN(nr[i])){
+continue;
+}
+res += Number(nr[i]);
+}
+return res;
+}
+console.log(ex17([1,2,3]));
+console.log(ex17([100,-200,3]));
+console.log(ex17([1,2,'a',3]));
+</script>

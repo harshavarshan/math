@@ -1,0 +1,9 @@
+<script>
+	function factorial(n) {
+    return n === 1? n : n * factorial(--n);
+}
+function combinations(n, r) {
+    return factorial(n) / (factorial(r) * factorial(n - r));
+}
+console.log(combinations(6, 2));
+</script>

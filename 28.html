@@ -1,0 +1,14 @@
+<script>
+	var int_round5 = (function() {
+
+const divider = 5;
+
+return function(num){
+var rest = num % divider, round = num-rest;
+return round+divider;
+};
+
+})();
+
+console.log(int_round5(32));
+</script>

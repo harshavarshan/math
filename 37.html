@@ -1,0 +1,17 @@
+<script>
+	var value_limit = (function() {
+
+return function(n,min,max){
+if (n > max){
+return max;
+}else if (n < min){
+return min;
+}
+return n;
+};
+
+})();
+
+console.log(value_limit(7, 1, 12)); //7
+console.log(value_limit(-7, 0, 12));
+</script>

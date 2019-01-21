@@ -1,0 +1,16 @@
+<script>
+	function ex9(x, y){
+if(!y) return y === 0 ? x : NaN;
+return ex9(y, x % y);
+}
+
+function gcd(arr){
+var n = 0;
+for( var i = 0; i < arr.length; i++){
+n = ex9(arr[i], n);
+return n;
+}
+}
+console.log(gcd([3,15,27]));
+console.log(gcd([5,10,15,25]));
+</script>
